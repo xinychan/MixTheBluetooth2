@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <com.test.assistant.view.UnderlineTextView
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/service_text_back"
+            android:text="订阅主题"
+            app:UTextColor="#8E8E8E"
+            app:UTextWidth="4dp" />
+
+        <com.test.assistant.view.UnderlineTextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/service_text_back"
+            android:text="发送主题"
+            app:UTextColor="#8E8E8E"
+            app:UTextWidth="4dp" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="连接状态:" />
+
+        <com.test.assistant.view.CustomButtonView
+            android:id="@+id/mqtt_service_switch"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            app:CBOriginalColor="#B6B6B6"
+            app:CBChangeColor="#A1D38E"
+            app:CBCircularColor="#FFF157"
+            app:CBRadius="10dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mqtt_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_weight="6.1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingRight="3dp"
+                android:text="连接状态:" />
+
+            <ImageView
+                android:id="@+id/circlelight"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/circle3" />
+
+            <TextView
+                android:id="@+id/lighttip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7E7E7E"
+                android:textSize="15sp"
+                android:text=" 连接中.." />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fragment_internet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:padding="7dp"
+                    android:textColor="#68C0F2"
+                    android:background="@drawable/backbox_false"
+                    android:text="跨城市透传" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/dele_recy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清屏"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:background="@drawable/wifishow_dele"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/wifishow_dele"
+                android:layout_weight="9">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/myRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center">
+
+        <HorizontalScrollView
+            android:id="@+id/wifishow_scroll"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/fragment_getdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R：0" />
+
+                <TextView
+                    android:id="@+id/fragment_senddata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="15dp"
+                    android:text="S: 0" />
+
+                <ImageView
+                    android:id="@+id/fragment_click_accept"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/circle_click_false" />
+
+                <TextView
+                    android:id="@+id/fragment_clickaccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="10dp"
+                    android:text="HEX接收" />
+
+                <ImageView
+                    android:id="@+id/fragment_click_send"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/circle_click_false" />
+
+                <TextView
+                    android:id="@+id/fragment_clicksend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:text="HEX发送" />
+
+                <LinearLayout
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.6"
+        android:background="@drawable/sendbottom"
+        android:weightSum="6">
+
+
+        <!--输入框-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_weight="4">
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/edit_sends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/sendbottom"
+                android:textSize="20sp"
+                android:text="HC-25" />
+
+            <EditText
+                android:id="@+id/edit_sends_hex"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/sendbottom"
+                android:textSize="20sp"
+                android:digits="ABCDEFabcdef0123456789"
+                android:typeface="normal"></EditText>
+
+        </LinearLayout>
+
+        <!--上拉选项-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/dele_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="清除" />
+
+        </LinearLayout>
+
+        <!--发送按钮-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_send"
+                android:text="发送" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

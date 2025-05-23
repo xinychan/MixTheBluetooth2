@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="7.2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/windows_rim"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/service_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="15dp"
+                android:paddingBottom="6dp"
+                android:text="服务器信息" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d1d2d6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:paddingTop="18dp"
+                android:paddingBottom="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/service_explain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingRight="6dp"
+                    android:text="IP :  " />
+
+                <EditText
+                    android:id="@+id/service_ip"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:padding="4dp"
+                    android:background="@drawable/windows_rim"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:paddingBottom="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/service_explain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="6dp"
+                    android:text="port:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/service_port"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/windows_rim"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/service_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/cambridge_blue"
+                    android:text="查看更多端口" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/service_hide"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/service_hide_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/service_text_back"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d1d2d6" />
+
+                <TextView
+                    android:id="@+id/service_second"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/service_text_back"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d1d2d6" />
+
+                <TextView
+                    android:id="@+id/service_hide_thirdly"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/service_text_back"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d1d2d6" />
+
+                <TextView
+                    android:id="@+id/service_hide_fourthly"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/service_text_back"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d1d2d6" />
+
+                <TextView
+                    android:id="@+id/service_hide_fifth"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/service_text_back"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d1d2d6" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="提示:长按可获取端口配置的模块" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/service_record"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:background="@drawable/windows_rim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="此端口配置过以下模块" />
+
+                <ScrollView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/service_record_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp" />
+                </ScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#d1d2d6"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/service_back_list"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textSize="18sp"
+                    android:textColor="#2E98C4"
+                    android:text="返回列表" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/service_message_back"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:background="@drawable/button_rim"
+                    android:paddingBottom="10dp"
+                    android:textColor="#4DB8DC"
+                    android:text="取消" />
+
+                <TextView
+                    android:id="@+id/service_message_connect"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:background="@drawable/button_rim"
+                    android:paddingBottom="10dp"
+                    android:textColor="#79D0A5"
+                    android:text="连接" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

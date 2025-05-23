@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HC-25助手</string>
+    <string name="main_scan_button">WIFI列表</string>
+    <string name="name_and_lv">WiFi助手 v1.5</string>
+</resources>

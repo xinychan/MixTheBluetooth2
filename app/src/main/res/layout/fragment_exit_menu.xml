@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="7.2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/windows_rim"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp"
+                android:text="配置结束" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d1d2d6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fragment_exit_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="18sp"
+                    android:text="    配置完成，成功配置10个，配置失败10个，接下来继续配置模块，还是返回消息传输？" />
+
+                <TextView
+                    android:id="@+id/fragment_menu_hint_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#749DC6"
+                    android:text="    提示:若未把模块连回局域网前退出APP，可点击首页右上角此处再次连接(时间间隔过长可能连接不上)" />
+
+                <ImageView
+                    android:id="@+id/fragment_menu_hint_icon"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:background="@mipmap/explain_3" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/fragment_exit_continue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/button_rim"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="继续配置"
+                    android:textColor="#4DB8DC"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fragment_exit_return"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:background="@drawable/button_rim"
+                    android:paddingBottom="10dp"
+                    android:textColor="#79D0A5"
+                    android:text="返回传输" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--这个是自己定义的-->
+    <declare-styleable name="MyRadarView">
+        <!--扫描圈的颜色-->
+        <attr name="circleColor" format="color" />
+        <!--圆圈的大小：扫描圈的画笔宽度-->
+        <attr name="circleWide" format="dimension" />
+        <!--弧形扫描的颜色-->
+        <attr name="lineColor" format="color" />
+        <!--弧形的画笔宽度，可能没有多大影响-->
+        <attr name="lineWide" format="dimension" />
+        <!--水滴中间的颜色-->
+        <attr name="circleDropColor" format="color" />
+        <!--水滴的扩散圈的大小-->
+        <attr name="circleRippleWide" format="dimension" />
+        <!--水滴的扩散圈颜色-->
+        <attr name="circleRippleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="excircleColor" format="color" />
+        <attr name="innerCircleColor" format="color" />
+        <attr name="allCircleWide" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BroadcastView">
+        <attr name="broadcastCircleColor" format="color" />
+        <attr name="broadcastCircleRadius" format="dimension" />
+        <attr name="broadcastArcColor" format="color" />
+        <attr name="broadcastArcWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlewingRingView">
+        <attr name="slewingRingOriginColor" format="color" />
+        <attr name="slewingRingChangeColor" format="color" />
+        <attr name="slewingRingRadius" format="dimension" />
+        <attr name="slewingRingArcWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ChangeColorTextView">
+        <attr name="colorTextOriginalColor" format="color" />
+        <attr name="colorTextChangeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingCircleView">
+        <attr name="loadingCircleColorLeft" format="color" />
+        <attr name="loadingCircleColorRight" format="color" />
+        <attr name="loadingCircleWidth" format="dimension" />
+        <attr name="loadingCircleRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomButtonView">
+        <attr name="CBCircularColor" format="color" />
+        <attr name="CBRadius" format="dimension" />
+        <attr name="CBChangeColor" format="color" />
+        <attr name="CBOriginalColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="UnderlineTextView">
+        <attr name="UTextWidth" format="dimension" />
+        <attr name="UTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TriangleView">
+        <attr name="triangleColor" format="color" />
+    </declare-styleable>
+
+</resources>

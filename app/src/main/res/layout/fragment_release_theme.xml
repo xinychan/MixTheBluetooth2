@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--发布主题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/fragment_release_theme_data"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="输入数据"
+            android:padding="10dp"
+            android:background="@drawable/windows_rim" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="QoS:" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/windows_rim">
+
+            <TextView
+                android:id="@+id/fragment_release_theme_QoS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="0" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#d1d2d6" />
+
+            <ImageView
+                android:id="@+id/fragment_release_theme_QoS_icon"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/pull_down_icon" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="是否保留:" />
+
+        <com.test.assistant.view.CustomButtonView
+            android:id="@+id/fragment_release_theme_retain_switch"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            app:CBOriginalColor="#B6B6B6"
+            app:CBChangeColor="#A1D38E"
+            app:CBCircularColor="#FFF157"
+            app:CBRadius="10dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+        <EditText
+            android:id="@+id/fragment_release_theme_subtopic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="主题"
+            android:padding="10dp"
+            android:background="@drawable/windows_rim" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/fragment_release_theme_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/windows_rim"
+            android:text="发送数据" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+</LinearLayout>

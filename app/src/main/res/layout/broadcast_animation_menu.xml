@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="7.5"
+        android:background="@drawable/my_general_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <com.test.assistant.view.BroadcastView
+            android:id="@+id/broadcast_view"
+            android:layout_width="match_parent"
+            app:broadcastCircleRadius="8dp"
+            app:broadcastArcColor="#86CDE6"
+            app:broadcastCircleColor="#86CDE6"
+            app:broadcastArcWidth="3dp"
+            android:layout_height="160dp" />
+
+        <LinearLayout
+            android:id="@+id/broadcast_anim_linear"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="5">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <com.test.assistant.view.SlewingRingView
+                    android:id="@+id/broadcast_module_loading"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:slewingRingRadius="8dp"
+                    app:slewingRingArcWidth="2dp"
+                    app:slewingRingOriginColor="#86CDE6"
+                    app:slewingRingChangeColor="#95EC69" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <com.test.assistant.view.ChangeColorTextView
+                    android:id="@+id/broadcast_module_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    app:colorTextOriginalColor="#FAFAFA"
+                    app:colorTextChangeColor="#080808"
+                    android:text="配置WireSSID" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="5">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <com.test.assistant.view.SlewingRingView
+                    android:id="@+id/broadcast_router_loading"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:slewingRingRadius="8dp"
+                    app:slewingRingArcWidth="2dp"
+                    app:slewingRingOriginColor="#86CDE6"
+                    app:slewingRingChangeColor="#95EC69" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <com.test.assistant.view.ChangeColorTextView
+                    android:id="@+id/broadcast_router_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    app:colorTextOriginalColor="#FAFAFA"
+                    app:colorTextChangeColor="#080808"
+                    android:text="连接huicheng3" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/broadcast_anim_hint"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在配置模块HC-25-19536875245588" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/broadcast_anim_self_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d1d2d6" />
+
+            <TextView
+                android:id="@+id/broadcast_anim_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="16sp"
+                android:text="退出搜索" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

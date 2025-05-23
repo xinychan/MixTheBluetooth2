@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingRight="3dp"
+                android:text="连接状态:" />
+
+            <ImageView
+                android:id="@+id/custom_circlelight"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/circle3" />
+
+            <TextView
+                android:id="@+id/custom_lighttip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7E7E7E"
+                android:textSize="15sp"
+                android:text=" 连接中.." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="5">
+
+            <TextView
+                android:id="@+id/delete_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清屏"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:background="@drawable/wifishow_dele"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/wifishow_dele"
+            android:layout_weight="8.5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/custom_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/wifishow_scroll"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/fragment_custom_getdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R：0" />
+
+            <TextView
+                android:id="@+id/fragment_custom_senddata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:paddingLeft="15dp"
+                android:text="S: 0" />
+
+            <ImageView
+                android:id="@+id/fragment_custom_click_accept"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/circle_click_false" />
+
+            <TextView
+                android:id="@+id/fragment_custom_clickaccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="10dp"
+                android:text="HEX接收" />
+
+            <ImageView
+                android:id="@+id/fragment_custom_click_send"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/circle_click_false" />
+
+            <TextView
+                android:id="@+id/fragment_custom_clicksend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="HEX发送" />
+
+            <LinearLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zero_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/zero_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/zero_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮管理" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/first_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/first_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/first_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/first_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/first_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/second_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/second_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/second_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/second_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/three_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/three_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/three_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/three_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/three_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourth_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fourth_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/fourth_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/fourth_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+
+        <Button
+            android:id="@+id/fourth_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按设置" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+</LinearLayout>

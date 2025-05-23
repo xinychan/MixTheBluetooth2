@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--订阅主题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_subscribe_topic_list"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/windows_rim" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16sp"
+            android:text="已订阅的主题(点击取消订阅)" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d1d2d6"
+            android:layout_marginLeft="10dp" />
+
+        <com.cy.cyflowlayoutlibrary.FlowLayoutScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/fragment_subscribe_topic_flow"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+        <EditText
+            android:id="@+id/fragment_subscribe_topic_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="订阅主题"
+            android:padding="10dp"
+            android:background="@drawable/windows_rim" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/fragment_subscribe_topic_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/windows_rim"
+            android:text="订阅主题" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>
